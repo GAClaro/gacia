@@ -7,7 +7,7 @@ from .agent import ask_agent
 
 
 app = FastAPI(
-    title="NexaAI",
+    title="GACIA",
     description="Agente de IA baseado em documentos",
     version="0.1.0"
 )

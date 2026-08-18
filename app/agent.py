@@ -9,7 +9,7 @@ client = genai.Client()
 STORE_NAME = os.getenv("FILE_SEARCH_STORE_NAME")
 
 SYSTEM_INSTRUCTION = """
-Você é o NexaAI, um assistente corporativo de perguntas e respostas.
+Você é o GACIA, um assistente corporativo de perguntas e respostas.
 
 Sua única fonte de informação são os documentos disponíveis
 através do File Search.
@@ -41,26 +41,37 @@ def ask_agent(question: str) -> str:
             "FILE_SEARCH_STORE_NAME não foi configurado no .env"
         )
 
-    interaction = client.interactions.create(
-        model="gemini-3.6-flash",
-        input=f"""
+    try:
+        interaction = client.interactions.create(
+            model="gemini-3.6-flash",
+            input=f"""
 {SYSTEM_INSTRUCTION}
 
 Pergunta do usuário:
 {question}
 """,
-        tools=[
-            {
-                "type": "file_search",
-                "file_search_store_names": [STORE_NAME],
-            }
-        ],
-    )
+            tools=[
+                {
+                    "type": "file_search",
+                    "file_search_store_names": [STORE_NAME],
+                }
+            ],
+        )
 
-    for step in interaction.steps:
-        if step.type == "model_output":
-            for content in step.content:
-                if content.type == "text":
-                    return content.text
+        for step in interaction.steps:
+            if step.type == "model_output":
+                for content in step.content:
+                    if content.type == "text":
+                        return content.text
 
-    return "Não foi possível gerar uma resposta."
+        return "Não foi possível gerar uma resposta."
+
+    except Exception as error:
+
+        print(f"Erro ao consultar Gemini: {error}")
+
+        return (
+            "O serviço de IA está temporariamente indisponível "
+            "devido ao limite de utilização. "
+            "Tente novamente mais tarde."
+        )
