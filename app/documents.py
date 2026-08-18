@@ -1,0 +1,10 @@
+from pathlib import Path
+
+
+def read_markdown(file_path: str) -> str:
+    path = Path(file_path)
+
+    if not path.exists():
+        raise FileNotFoundError(f"Arquivo não encontrado: {file_path}")
+
+    return path.read_text(encoding="utf-8")
