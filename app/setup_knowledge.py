@@ -12,7 +12,7 @@ def setup_knowledge():
 
     store = client.file_search_stores.create(
         config={
-            "display_name": "NexaAI Knowledge Base",
+            "display_name": "GACIA Knowledge Base",
             "embedding_model": "models/gemini-embedding-2",
         }
     )
@@ -25,7 +25,7 @@ def setup_knowledge():
         file="documents/faq.md",
         file_search_store_name=store.name,
         config={
-            "display_name": "FAQ NexaCloud",
+            "display_name": "FAQ GACIA NexaCloud",
         },
     )
 
