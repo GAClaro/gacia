@@ -8,7 +8,7 @@ client = genai.Client()
 
 def ask_gemini(question: str, context: str) -> str:
     prompt = f"""
-Você é o assistente virtual da NexaCloud.
+Você é o assistente virtual da GACIA.
 
 Responda à pergunta do usuário utilizando exclusivamente
 as informações presentes no contexto fornecido.
