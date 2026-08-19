@@ -1,13 +1,13 @@
-# FAQ — NexaCloud
+# FAQ — GACIA
 
-## O que é a NexaCloud?
+## O que é a GACIA?
 
-A NexaCloud é uma plataforma de gestão empresarial oferecida pela NexaTech.
+A GACIA é uma plataforma de gestão empresarial oferecida pela NexaTech.
 A plataforma permite que empresas gerenciem clientes, projetos e equipes em um único ambiente.
 
 ## Quais são os planos disponíveis?
 
-A NexaCloud possui três planos:
+A GACIA possui três planos:
 
 - Starter
 - Professional
@@ -19,13 +19,13 @@ Não. O acesso à API está disponível apenas nos planos Professional e Enterpr
 
 ## Como funciona o período de teste?
 
-Todos os novos clientes podem utilizar a NexaCloud gratuitamente durante 14 dias.
+Todos os novos clientes podem utilizar a GACIA gratuitamente durante 14 dias.
 Não é necessário informar cartão de crédito para iniciar o período de teste.
 
 ## É possível cancelar a assinatura?
 
 Sim. O cliente pode solicitar o cancelamento a qualquer momento.
-O cancelamento pode ser realizado diretamente pelo painel administrativo da NexaCloud.
+O cancelamento pode ser realizado diretamente pelo painel administrativo da GACIA.
 
 ## Existe reembolso?
 
