@@ -1,0 +1,31 @@
+{
+  "empresa": {
+    "nome": "NexaTech",
+    "segmento": "Tecnologia e software empresarial",
+    "fundacao": 2021,
+    "sede": "São Paulo, SP, Brasil",
+    "produto_principal": "NexaCloud",
+    "missao": "Simplificar a gestão empresarial por meio de tecnologia acessível e inteligente.",
+    "visao": "Ser uma referência latino-americana em soluções digitais para gestão empresarial.",
+    "valores": [
+      "Simplicidade",
+      "Inovação",
+      "Transparência",
+      "Segurança",
+      "Foco no cliente"
+    ],
+    "areas": [
+      "Tecnologia",
+      "Produto",
+      "Comercial",
+      "Financeiro",
+      "Recursos Humanos",
+      "Suporte"
+    ],
+    "contatos": {
+      "suporte": "suporte@nexatech.example",
+      "financeiro": "financeiro@nexatech.example",
+      "privacidade": "privacidade@nexatech.example"
+    }
+  }
+}
