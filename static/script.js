@@ -34,7 +34,7 @@ button.addEventListener("click", async () => {
     } catch (error) {
 
         answer.textContent =
-            "Ocorreu um erro ao consultar o NexaAI.";
+            "Ocorreu um erro ao consultar o GACIA.";
 
     }
 });
