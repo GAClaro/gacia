@@ -9,7 +9,7 @@ client = genai.Client()
 # 1. Criar o File Search Store
 store = client.file_search_stores.create(
     config={
-        "display_name": "NexaAI Teste",
+        "display_name": "GACIA Teste",
         "embedding_model": "models/gemini-embedding-2",
     }
 )
@@ -21,7 +21,7 @@ operation = client.file_search_stores.upload_to_file_search_store(
     file="documents/faq.md",
     file_search_store_name=store.name,
     config={
-        "display_name": "FAQ NexaCloud",
+        "display_name": "FAQ GACIA NexaCloud",
     },
 )
 
@@ -38,7 +38,7 @@ print("Documento indexado!")
 interaction = client.interactions.create(
     model="gemini-3.6-flash",
     input="""
-                Você é o NexaAI, um assistente corporativo de perguntas e respostas.
+                Você é o GACIA, um assistente corporativo de perguntas e respostas.
 
                 Sua única fonte de informação são os documentos recuperados pela
                 ferramenta File Search.
