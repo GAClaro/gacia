@@ -361,8 +361,8 @@ Não coloque credenciais, chaves de API ou informações privadas de clientes no
 - [x] Base inicial de documentos
 - [x] Repositório GitHub
 - [x] Testes com diferentes formatos de documentos
-- [ ] Deploy na Oracle Cloud Infrastructure (OCI)
-- [ ] Upload de documentos pela interface
+- [x] Deploy na Oracle Cloud Infrastructure (OCI)
+- [x] Upload de documentos pela interface
 - [ ] Autenticação de usuários
 - [ ] Histórico de perguntas
 - [ ] Gerenciamento de documentos
